@@ -1,0 +1,20 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "types": [],
+    "module": "esnext",
+    "target": "es2015"
+  },
+  "angularCompilerOptions": {
+    "enableIvy": true
+  },
+  "files": [
+    "main.ts",
+    "polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ]
+}

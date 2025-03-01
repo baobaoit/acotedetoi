@@ -1,0 +1,41 @@
+<div class="home-page">
+  <div class="logo" [ngClass]="{'has-ready__logo': readyLogo$ | async}">
+    <img src="./assets/logo/logo.svg" />
+  </div>
+
+  <div class="home-body">
+    <div class="hello" [ngClass]="{'has-ready__hello': readyHello$ | async}">
+      <img src="./assets/images/personnage_hello.gif" />
+    </div>
+    <div class="home__text">
+      <span class="home__text-wrapper" [ngClass]="{'has-ready__home-text': readyHomeText$ | async}">
+        <span class="content-wrapper">
+          <p>
+            Ensoleillons le quotidien des enfants malades aux soins intensifs, de leur famille et du personnel soignant. 
+          </p>
+          <p>Ensemble nous pouvons venir en aide aux enfants malades de l’unité des soins intensifs des HUG, à leur famille ainsi qu’au personnel soignant.</p>
+          
+          <p>En améliorant la qualité de vie des enfants, nous générerons un impact positif et direct sur la famille et le personnel soignant. À travers nos actions, nous leur apporterons du confort, du bonheur et de la sérénité. Chaque action que nous mènerons contribuera au bien-être de tous. Chaque action compte.</p>
+          
+          <p>Restez à l’écoute, nous dévoilerons ces prochaines semaines nos premiers projets qui nous tiennent tant à cœur. Votre aide est précieuse. Ils ont tous besoin de votre soutien !</p>
+          
+          <p>Soyons à côté d’eux !</p>
+          <p>Un grand merci</p>
+        </span>
+      </span>
+    </div>
+    <div class="contactez-container" [ngClass]="{'has-ready__contactez': readyContactez$ | async}">
+      <span class="contactez" (click)="mailto()">
+        <h4>Contactez-nous</h4>
+      </span>
+    </div>
+    <div class="duo" [ngClass]="{'has-ready__duo': readyDuo$ | async}">
+      <img src="./assets/images/personnages_duo.gif" />
+    </div>
+  </div>
+
+  <div class="footer" [ngClass]="{'has-ready__footer': readyFooter$ | async}">
+    <h6 class="footer__first">Rue du Rhône, 118, 1204 Genève</h6>
+    <h6><a href="tel:+41 22 786 01 01">+41 22 786 01 01</a> | info@acotedetoi.ch</h6>
+  </div>
+</div>

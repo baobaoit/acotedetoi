@@ -1,0 +1,49 @@
+html {
+    position: relative;
+    min-height: 100%;
+    scroll-behavior: smooth;
+    font-size: 15px;
+}
+
+body {
+    overflow: auto;
+    font-family: "Mercury Regular Regular", sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 1600px;
+        max-width: 100%;
+    }
+}
